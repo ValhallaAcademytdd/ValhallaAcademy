@@ -1,0 +1,320 @@
+.bloque-planes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.tarjeta-plan {
+    background: linear-gradient(145deg, #161616 0%, #0d0d0d 100%);
+    border: 1px solid var(--color-borde);
+    border-radius: 14px;
+    padding: 2.2rem 1.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    transition: all 0.3s ease;
+    box-shadow: var(--sombra-tarjeta);
+}
+
+.tarjeta-plan:hover {
+    border-color: rgba(243, 168, 18, 0.6);
+    transform: translateY(-4px);
+}
+
+.tarjeta-plan.destacado {
+    border: 2px solid var(--color-dorado);
+    box-shadow: 0 0 30px rgba(243, 168, 18, 0.25);
+}
+
+.tarjeta-plan.destacado:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 35px rgba(243, 168, 18, 0.35);
+}
+
+.etiqueta-plan {
+    position: absolute;
+    top: -13px;
+    right: 20px;
+    background: linear-gradient(135deg, var(--color-dorado) 0%, var(--color-dorado-hover) 100%);
+    color: #000;
+    font-family: var(--fuente-titulo);
+    font-weight: 900;
+    font-size: 0.72rem;
+    padding: 4px 14px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.tarjeta-plan h3 {
+    font-size: 1.35rem;
+    color: #ffffff;
+    margin-bottom: 0.4rem;
+}
+
+.precio-plan {
+    font-size: 2.5rem;
+    font-family: var(--fuente-titulo);
+    font-weight: 900;
+    color: var(--color-dorado);
+    margin: 1rem 0;
+    display: flex;
+    align-items: baseline;
+    gap: 5px;
+}
+
+.precio-plan span {
+    font-size: 0.95rem;
+    color: var(--color-texto-suave);
+    font-weight: 400;
+}
+
+.caracteristicas-plan {
+    list-style: none;
+    margin: 1.5rem 0 0 0;
+}
+
+.caracteristicas-plan li {
+    font-size: 0.95rem;
+    color: var(--color-texto-claro);
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.caracteristicas-plan li::before {
+    content: '✓';
+    color: var(--color-dorado);
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.bloque-horarios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.8rem;
+    margin-top: 1.5rem;
+}
+
+.tarjeta-horario {
+    background: var(--color-tarjeta-fondo);
+    border-radius: 12px;
+    border: 1px solid var(--color-borde);
+    padding: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    transition: all 0.3s ease;
+    box-shadow: var(--sombra-tarjeta);
+}
+
+.tarjeta-horario:hover {
+    border-color: var(--color-dorado);
+    transform: translateY(-3px);
+    box-shadow: var(--sombra-dorada);
+}
+
+.icono-horario {
+    width: 55px;
+    height: 55px;
+    background: rgba(243, 168, 18, 0.1);
+    border: 1px solid var(--color-dorado);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.icono-horario svg {
+    width: 28px;
+    height: 28px;
+    fill: var(--color-dorado);
+}
+
+.detalles-horario h4 {
+    font-size: 1.15rem;
+    color: #ffffff;
+    margin-bottom: 0.3rem;
+}
+
+.detalles-horario p {
+    color: var(--color-dorado);
+    font-family: var(--fuente-titulo);
+    font-weight: 800;
+    font-size: 1.05rem;
+}
+
+.caja-info-horarios {
+    background: linear-gradient(145deg, #161616 0%, #101010 100%);
+    border: 1px solid var(--color-dorado);
+    border-left: 5px solid var(--color-dorado);
+    border-radius: 10px;
+    padding: 1.2rem 1.5rem;
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: var(--sombra-dorada);
+}
+
+.caja-info-horarios svg {
+    width: 28px;
+    height: 28px;
+    fill: var(--color-dorado);
+    flex-shrink: 0;
+}
+
+.caja-info-horarios p {
+    font-size: 0.98rem;
+    color: var(--color-texto-claro);
+    line-height: 1.5;
+}
+
+.botones-sociales {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1.2rem;
+    margin-top: 1.5rem;
+}
+
+.boton-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background-color: #1a1a1a;
+    border: 1px solid var(--color-borde);
+    padding: 0.9rem 1.2rem;
+    border-radius: 10px;
+    color: #ffffff;
+    font-family: var(--fuente-titulo);
+    font-weight: 800;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.boton-social svg {
+    width: 22px;
+    height: 22px;
+    fill: currentColor;
+    transition: fill 0.3s ease;
+}
+
+.boton-social:hover {
+    border-color: var(--color-dorado);
+    color: var(--color-dorado);
+    transform: translateY(-3px);
+    box-shadow: var(--sombra-dorada);
+    background-color: #222;
+}
+
+.contenedor-mapa {
+    width: 100%;
+    height: 350px;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-top: 1.2rem;
+    border: 1px solid var(--color-borde);
+    box-shadow: var(--sombra-tarjeta);
+}
+
+.contenedor-mapa iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    filter: grayscale(80%) invert(90%) contrast(120%);
+}
+
+@media (max-width: 768px) {
+    .bloque-planes {
+        gap: 0.9rem;
+    }
+
+    .tarjeta-plan {
+        padding: 1.1rem 0.9rem;
+        border-radius: 10px;
+    }
+
+    .etiqueta-plan {
+        font-size: 0.65rem;
+        padding: 3px 10px;
+    }
+
+    .tarjeta-plan h3 {
+        font-size: 1.1rem;
+    }
+
+    .precio-plan {
+        font-size: 1.7rem;
+        margin: 0.4rem 0;
+    }
+
+    .caracteristicas-plan li {
+        font-size: 0.8rem;
+        margin-bottom: 0.4rem;
+    }
+
+    .bloque-horarios {
+        gap: 0.6rem;
+    }
+
+    .tarjeta-horario {
+        padding: 0.8rem;
+        gap: 0.8rem;
+        border-radius: 8px;
+    }
+
+    .icono-horario {
+        width: 38px;
+        height: 38px;
+    }
+
+    .icono-horario svg {
+        width: 18px;
+        height: 18px;
+    }
+
+    .detalles-horario h4 {
+        font-size: 0.95rem;
+    }
+
+    .detalles-horario p {
+        font-size: 0.88rem;
+    }
+
+    .caja-info-horarios {
+        padding: 0.8rem;
+        margin-top: 1rem;
+    }
+
+    .caja-info-horarios p {
+        font-size: 0.82rem;
+    }
+
+    .botones-sociales {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.6rem;
+    }
+
+    .boton-social {
+        padding: 0.6rem;
+        font-size: 0.8rem;
+        border-radius: 8px;
+    }
+
+    .boton-social svg {
+        width: 18px;
+        height: 18px;
+    }
+
+    .contenedor-mapa {
+        height: 180px;
+        margin-top: 0.8rem;
+        border-radius: 8px;
+    }
+}

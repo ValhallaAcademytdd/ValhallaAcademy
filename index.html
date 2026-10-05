@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="images/icono.ico">
+    <title>Valhalla Academy - Gimnasio de MMA & Acondicionamiento</title>
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,700;0,800;0,900;1,800&family=Permanent+Marker&display=swap" rel="stylesheet">
+    
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="portada.css">
+    <link rel="stylesheet" href="inicio.css">
+    <link rel="stylesheet" href="trayectoria.css">
+    <link rel="stylesheet" href="normas.css">
+    <link rel="stylesheet" href="catalogo.css">
+    <link rel="stylesheet" href="contacto.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="menu">
+            <img src="images/logo.png" alt="Logo Valhalla Academy">
+            <div class="titulo-menu">VALHALLA ACADEMY</div>
+        </div>
+        
+        <button class="boton-menu-movil" id="botonMenuMovil" aria-label="Abrir menú">☰</button>
+
+        <nav id="menuNavegacion">
+            <ul>
+                <li><a href="#portada">Portada</a></li>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#trayectoria">Trayectoria</a></li>
+                <li><a href="#normas">Normas</a></li>
+                <li><a href="#catalogo">Catálogo</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="fondo-oscuro-menu" id="fondoOscuroMenu"></div>
+
+    <button class="boton-subir" id="botonSubirArriba" aria-label="Volver arriba"><span class="icono-flecha">↑</span></button>
+
+    <div class="indicador-puntos">
+        <div class="item-punto" data-seccion="portada">
+            <span class="etiqueta-punto">Portada</span>
+            <a href="#portada" class="punto"></a>
+        </div>
+        <div class="item-punto" data-seccion="inicio">
+            <span class="etiqueta-punto">Inicio</span>
+            <a href="#inicio" class="punto"></a>
+        </div>
+        <div class="item-punto" data-seccion="trayectoria">
+            <span class="etiqueta-punto">Trayectoria</span>
+            <a href="#trayectoria" class="punto"></a>
+        </div>
+        <div class="item-punto" data-seccion="normas">
+            <span class="etiqueta-punto">Normas</span>
+            <a href="#normas" class="punto"></a>
+        </div>
+        <div class="item-punto" data-seccion="catalogo">
+            <span class="etiqueta-punto">Catálogo</span>
+            <a href="#catalogo" class="punto"></a>
+        </div>
+        <div class="item-punto" data-seccion="contacto">
+            <span class="etiqueta-punto">Contacto</span>
+            <a href="#contacto" class="punto"></a>
+        </div>
+    </div>
+
+
+    <div class="seccion-portada" id="portada">
+        <div class="capa-principal">
+            <h1 class="titulo-portada">VALHALLA ACADEMY</h1>
+            <p class="subtitulo-portada">Centro de Entrenamiento Integral de MMA y Acondicionamiento Físico</p>
+        </div>
+    </div>
+
+
+    <section id="inicio">
+        <h2 class="titulo-seccion">Inicio</h2>
+        
+        <div class="bloques-inicio">
+            <div class="bloque-concepto">
+                <h3>¿Qué es Valhalla Academy?</h3>
+                <p>Valhalla Academy es un centro de entrenamiento integral de última generación que fusiona la estrategia y efectividad de las Artes Marciales Mixtas (MMA) con el acondicionamiento físico funcional de alta intensidad.</p>
+            </div>
+            <div class="bloque-concepto">
+                <h3>¿Qué son las Artes Marciales Mixtas?</h3>
+                <p>Las Artes Marciales Mixtas (MMA por sus siglas en inglés) son un deporte de combate que combina técnicas de múltiples disciplinas, como el boxeo, el muay thai, el jiu-jitsu brasileño, la lucha libre y el judo.</p>
+            </div>
+        </div>
+
+        <div class="bloque-concepto" style="margin-top: 1.5rem;">
+            <h3>¿Por qué el nombre "Valhalla"?</h3>
+            <p>El nombre hace referencia a la mitología nórdica, el cual lo mostraba como un salón gigante donde iban los guerreros que morían en batalla, una vez ahí entrenaban hasta el fin del mundo.</p>
+        </div>
+
+        <h3 class="subtitulo-bloque">Nuestras Instalaciones</h3>
+        <div class="bloque-instalaciones">
+            <div class="tarjeta-instalacion">
+                <img src="images/instalaciones1.jpg" alt="Instalaciones Valhalla Academy 1">
+            </div>
+            <div class="tarjeta-instalacion">
+                <img src="images/instalaciones2.jpg" alt="Instalaciones Valhalla Academy 2">
+            </div>
+            <div class="tarjeta-instalacion">
+                <img src="images/instalaciones3.jpg" alt="Instalaciones Valhalla Academy 3">
+            </div>
+            <div class="tarjeta-instalacion">
+                <img src="images/instalaciones4.jpg" alt="Instalaciones Valhalla Academy 4">
+            </div>
+            <div class="tarjeta-instalacion">
+                <img src="images/instalaciones5.jpg" alt="Instalaciones Valhalla Academy 5">
+            </div>
+        </div>
+    </section>
+
+    <div class="imagen-ampliada" id="ImagenAmpliada">
+        <span class="cerrar-visor" id="cerrarVisor">&times;</span>
+        <img src="" alt="Instalación ampliada" class="contenido-visor" id="imagenVisor">
+    </div>
+
+  
+    <section id="trayectoria">
+        <h2 class="titulo-seccion">Trayectoria</h2>
+        
+        <div class="estructura-trayectoria">
+            <div>
+                <h3 class="subtitulo-bloque">Línea de Tiempo</h3>
+                
+                <div class="item-historia">
+                    <h4>2020 – El Inicio</h4>
+                    <p>En 2020 comenzó nuestra historia. En aquel entonces, la academia funcionaba en un garaje sin techo, por lo que posteriormente se colocó una malla sombra para poder entrenar en mejores condiciones. Debido a que todavía no contábamos con barras dentro de la academia, parte de los entrenamientos se realizaban en una plaza cercana, aprovechando las barras que allí se encontraban.</p>
+                    <p>A pesar de las limitaciones, ese año comenzamos a construir poco a poco nuestro espacio de entrenamiento. Se compraron las primeras barras para fondos y dominadas, además de las primeras cuerdas, una pesa rusa de 8 kg y una rueda abdominal, esta última obsequiada a la academia.</p>
+                </div>
+
+                <div class="item-historia">
+                    <h4>2021-2022-2023 Crecimiento y aprendizaje</h4>
+                    <p>Durante 2021 la infraestructura comenzó a mejorar. Se colocaron dos mallas adicionales en el techo para proteger el equipo de la lluvia y recibimos un regalo de un amigo de la casa los primeros tatamis pequeños, además se compraron unas colchonetas. Debido a los recursos limitados, las pesas se fueron comprando poco a poco, de a pares.</p>
+                    <p>En agosto, después de mucho esfuerzo, logramos construir la primera parte del techo y adquirimos otra barra. A finales de año compramos nuestra primera barra olímpica y el primer rack de sentadillas, ampliando las posibilidades de entrenamiento y fortaleciendo poco a poco nuestra comunidad.</p>
+                    <p>En 2022 continuamos mejorando el gimnasio. Fijamos el rack de sentadillas a la pared, adquirimos más pesas y discos y renovamos la imagen del espacio pintándolo de verde. También incorporamos una barra fija, un par de anillas y una banca de gimnasio.</p>
+                    <p>Ese año dimos un salto de calidad en el entrenamiento de combate con la compra de nuestro primer paquete de manoplas y thaipads, mientras continuaba creciendo el número de personas interesadas en las artes marciales.</p>
+                    <p>En 2023 comenzamos con la venta de equipos de entrenamiento, como guantes, vendas, bucales y otros implementos, facilitando el acceso al material necesario para nuestros alumnos.</p>
+                    <p>Durante este año también se notó un importante crecimiento de la comunidad. Cada vez más personas se interesaban no solo por el acondicionamiento físico, sino también por las artes marciales mixtas, consolidando a Valhalla Academy como un espacio de entrenamiento, aprendizaje y formación de futuros competidores.</p>
+                </div>
+
+                <div class="item-historia">
+                    <h4>2024 Primeros eventos</h4>
+                    <p>En 2024, Valhalla Academy continuó su proceso de crecimiento y mejora. Durante este año se inició la venta de suplementos, además de realizar una renovación de la pintura de la academia, incorporando figuras geométricas y diferentes patrones que mejoraron la apariencia del espacio. También se amplió el equipamiento con la compra de otro par de anillas y nuevas barras para fondos, especialmente destinadas a quienes recién comenzaban a entrenar.</p>
+                    <p>A mediados del año se realizó una pequeña ampliación de la academia, aprovechando un sector que anteriormente no era utilizado. Se mejoró el piso, se reutilizó una malla sombra y posteriormente se construyó un pequeño techo de calamina, logrando disponer de un espacio adicional para los entrenamientos.</p>
+                    <p>En el ámbito deportivo, 2024 fue un año importante, ya que participamos por primera vez en un evento de Kick Boxing de exhibición con dos representantes. Posteriormente participamos en un evento de MMA, donde conseguimos una victoria y otra participación no pudo ser validada debido a una lesión. Estas experiencias permitieron a nuestros deportistas adquirir conocimientos, corregir errores y continuar mejorando.</p>
+                    <p>Finalmente, presentamos el primer uniforme oficial de Valhalla Academy, fortaleciendo nuestra identidad como equipo y reflejando el crecimiento que la academia había alcanzado durante ese año.</p>
+                </div>
+
+                <div class="item-historia">
+                    <h4>2025 Preparación y esfuerzo</h4>
+                    <p>En 2025, Valhalla Academy continuó fortaleciendo su identidad y crecimiento. A principios de año presentamos la segunda versión del uniforme, incorporando como novedad el nuevo short de MMA.</p>
+                    <p>Durante este periodo también mejoramos la organización y seguridad de la academia, colocando las pesas en soportes y manteniendo el área de entrenamiento más ordenada. Además, ampliamos el equipamiento con nuevas barras olímpicas, discos, mancuernas, un rack para sentadillas y más tatamis, mejorando tanto el área de acondicionamiento físico como la destinada a las artes marciales.</p>
+                    <p>Otro avance importante fue la presencia en internet. Reactivamos las páginas de Valhalla Academy y creamos una cuenta de TikTok, con el objetivo de mostrar nuestras actividades y llegar a más personas.</p>
+                    <p>Finalmente, a finales de 2025 comenzamos la preparación de nuevos competidores para futuros eventos de MMA, trabajando en su técnica, condición física, disciplina y mentalidad competitiva para representar a la academia.</p>
+                </div>
+
+                <div class="item-historia">
+                    <h4>2026 Evolución</h4>
+                    <p>En 2026, Valhalla Academy comenzó el año con una importante participación en un evento de MMA, donde nuestros representantes tuvieron una participación invicta, demostrando el resultado del entrenamiento y la preparación realizada durante los meses anteriores.</p>
+                    <p>El crecimiento de la academia también generó la necesidad de ampliar sus instalaciones, debido al aumento de alumnos. Para ello, se demolió una pared, se construyeron un nuevo piso y techo, logrando un espacio más amplio y cómodo. Además, se renovó la pintura y se reorganizaron los equipos para aprovechar mejor el espacio y brindar mayor seguridad durante los entrenamientos.</p>
+                    <p>Finalmente, se realizó un evento de Boxeo, Kick Boxing y MMA junto a otras academias, con el propósito de compartir experiencias, fortalecer la unión entre equipos y generar nuevas oportunidades para participar en competencias fuera del departamento, llevando el nombre de Valhalla Academy a otros lugares.</p>
+                </div>
+
+                <h3 class="subtitulo-bloque" style="margin-top: 2rem;">Logros Deportivos</h3>
+                <div class="caja-tarjeta">
+                    <ol class="lista-logros">
+                        <li>Participación en evento de Kick Boxing - 2024</li>
+                        <li>Participación en competición de Artes Marciales Mixtas - 2024</li>
+                        <li>Participación en torneo de Jiu Jitsu - 2025</li>
+                        <li>Participación en eventos combinados de Kick Boxing y MMA - 2026</li>
+                        <li>Participación en eventos de Boxeo y MMA - 2026</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="seccion-entrenador">
+                <h3 class="subtitulo-bloque">El Entrenador</h3>
+                <div class="caja-tarjeta">
+                    <div class="nombre-entrenador">JUAN DANIEL “TITO” VICENTI</div>
+                    <img src="images/entrenador.jpg" alt="Juan Daniel Tito Vicentti - Entrenador Valhalla Academy">
+                    <div class="biografia-entrenador">
+                        <p>Mi historia con las artes marciales comenzó en Santa Cruz, cuando tenía aproximadamente 12 años. Mis primeros pasos fueron en el Taekwondo, disciplina que comencé a practicar hace alrededor de 16 años. En aquella época no entrenaba de manera continua, ya que asistía principalmente durante mis vacaciones, pero esos primeros entrenamientos despertaron en mí una pasión que con el tiempo se convertiría en una parte fundamental de mi vida.</p>
+                        <p>Posteriormente, a los 15 años, comencé a entrenar MMA en NGF, cuando todavía realizaban sus entrenamientos en un garaje. Con el paso del tiempo, la academia fue creciendo hasta establecerse en su sede de Los Penocos, y durante ese proceso yo también fui creciendo dentro de las artes marciales. Para cuando la academia llegó a esa nueva etapa, ya tenía la responsabilidad de enseñar y transmitir mis conocimientos a otros alumnos.</p>
+                        <p>A lo largo de los años fui adquiriendo experiencia no solamente como practicante y competidor, sino también como entrenador. He tenido la oportunidad de preparar y acompañar a distintos peleadores en diferentes competiciones, trabajando aspectos técnicos, físicos y estratégicos para que pudieran afrontar sus respectivos combates.</p>
+                        <p>Mi formación también se complementó fuera de las artes marciales. Paralelamente realicé cursos en línea de nutrición, buscando ampliar mis conocimientos para poder comprender mejor la preparación integral de un deportista.</p>
+                        <p>Además, egresé como Técnico Medio en Fisioterapia y tuve la oportunidad de trabajar durante un tiempo en La Gota de Leche, realizando trabajos de rehabilitación con personas con necesidades especiales y personas mayores. Esta experiencia me permitió adquirir conocimientos y experiencias que posteriormente también fueron útiles dentro de mi trabajo como entrenador.</p>
+                        <p>Con el paso de los años, toda esta experiencia fue formando mi manera de entender el entrenamiento: no se trata únicamente de preparar a alguien para pelear, sino de ayudarlo a desarrollar disciplina, responsabilidad, condición física, técnica, confianza y capacidad para superar dificultades.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="normas">
+        <h2 class="titulo-seccion">Normas de Convivencia</h2>
+        <ul class="lista-normas">
+            <li><span class="numero">1.-</span> Mantener buena higiene.</li>
+            <li><span class="numero">2.-</span> Venir con la ropa limpia, las uñas recortadas y usar desodorante.</li>
+            <li><span class="numero">3.-</span> Saludar a todos sin excepciones.</li>
+            <li><span class="numero">4.-</span> Dejar el ego en la casa, aquí todos venimos a aprender y mejorar.</li>
+            <li><span class="numero">5.-</span> Respetar a todos.</li>
+            <li><span class="numero">6.-</span> Controlar la intensidad de los sparrings y respetar el tapeo.</li>
+            <li><span class="numero">7.-</span> No pelear fuera de la academia.</li>
+            <li><span class="numero">8.-</span> No usar golpes sucios e ilegales.</li>
+            <li><span class="numero">9.-</span> Si usas algún equipo/pesa devolverlo a su sitio.</li>
+            <li><span class="numero">10.-</span> Cuidar y guardar tanto tatamis como material de manopleo.</li>
+        </ul>
+    </section>
+
+
+    <section id="catalogo">
+        <h2 class="titulo-seccion">Catálogo de Productos</h2>
+        
+        <h3 class="subtitulo-bloque">Equipo de entrenamiento</h3>
+        <div class="bloque-catalogo">
+            <div class="tarjeta-producto">
+                <img src="images/guantes1.jpg" alt="Guantes de Boxeo Venum">
+                <div class="info-producto">
+                    <div>
+                        <h3>Guantes de Boxeo Venum</h3>
+                        <p>Guantes de Boxeo Marca Venum para la práctica de distintas disciplinas como: Boxeo, Kickboxing, Muay thai.<br><strong>Disponible en:</strong> 10, 12, 14, 16 Oz.</p>
+                    </div>
+                    <div>
+                        <div class="precio-producto">350 Bs.</div>
+                        <a href="https://wa.link/t0th4k" target="_blank" class="boton-enlace">Consultar Disponibilidad</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta-producto">
+                <img src="images/guantes2.jpg" alt="Guantes de Boxeo Pretorian">
+                <div class="info-producto">
+                    <div>
+                        <h3>Guantes de Boxeo Pretorian</h3>
+                        <p>Guantes de Boxeo Marca Pretorian para la práctica de distintas disciplinas como: Boxeo, Kickboxing, Muay thai.<br><strong>Disponible en:</strong> 10, 12, 14, 16 Oz.</p>
+                    </div>
+                    <div>
+                        <div class="precio-producto">330 Bs.</div>
+                        <a href="https://wa.link/tpqeyx" target="_blank" class="boton-enlace">Consultar Disponibilidad</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta-producto">
+                <img src="images/guantes3.jpg" alt="Guantes de Boxeo BN">
+                <div class="info-producto">
+                    <div>
+                        <h3>Guantes de Boxeo BN</h3>
+                        <p>Guantes de Boxeo Marca BN para la práctica de distintas disciplinas como: Boxeo, Kickboxing, Muay thai.<br><strong>Disponible en:</strong> 10, 12, 14, 16 Oz.</p>
+                    </div>
+                    <div>
+                        <div class="precio-producto">330 Bs.</div>
+                        <a href="https://wa.link/y6uenc" target="_blank" class="boton-enlace">Consultar Disponibilidad</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta-producto">
+                <img src="images/guantes4.jpg" alt="Guantes de Boxeo Antra">
+                <div class="info-producto">
+                    <div>
+                        <h3>Guantes de Boxeo Antra</h3>
+                        <p>Guantes de Boxeo Marca Antra para la práctica de distintas disciplinas como: Boxeo, Kickboxing, Muay thai.<br><strong>Disponible en:</strong> 10, 12, 14, 16 Oz.</p>
+                    </div>
+                    <div>
+                        <div class="precio-producto">310 Bs.</div>
+                        <a href="https://wa.link/s2tqwt" target="_blank" class="boton-enlace">Consultar Disponibilidad</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta-producto">
+                <img src="images/guantesmma1.jpg" alt="Guantes de MMA Venum">
+                <div class="info-producto">
+                    <div>
+                        <h3>Guantes de MMA Venum</h3>
+                        <p>Guantillas Venum con los dedos descubiertos para la práctica de MMA.</p>
+                    </div>
+                    <div>
+                        <div class="precio-producto">290 Bs.</div>
+                        <a href="https://wa.link/2kywpz" target="_blank" class="boton-enlace">Consultar Disponibilidad</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta-producto">
+                <img src="images/guantesmma2.jpg" alt="Guantes de MMA Antra">
+                <div class="info-producto">
+                    <div>
+                        <h3>Guantes de MMA Antra</h3>
+                        <p>Guantillas Antra con los dedos descubiertos para la práctica de MMA.</p>
+                    </div>
+                    <div>
+                        <div class="precio-producto">280 Bs.</div>
+                        <a href="https://wa.link/rqdpre" target="_blank" class="boton-enlace">Consultar Disponibilidad</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta-producto">
+                <img src="images/vendas1.jpg" alt="Vendas Antra">
+                <div class="info-producto">
+                    <div>
+                        <h3>Vendas Antra</h3>
+                        <p>Vendas Antra deportivas para la práctica de Boxeo, Kickboxing, MMA.<br><strong>Longitud:</strong> 4.5 Metros.</p>
+                    </div>
+                    <div>
+                        <div class="precio-producto">70 Bs.</div>
+                        <a href="https://wa.link/o4yfh5" target="_blank" class="boton-enlace">Consultar Disponibilidad</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta-producto">
+                <img src="images/vendas2.jpg" alt="Vendas Venum">
+                <div class="info-producto">
+                    <div>
+                        <h3>Vendas Venum</h3>
+                        <p>Vendas Venum deportivas para la práctica de Boxeo, Kickboxing, MMA.<br><strong>Longitud:</strong> 4 Metros.</p>
+                    </div>
+                    <div>
+                        <div class="precio-producto">60 Bs.</div>
+                        <a href="https://wa.link/gew8r2" target="_blank" class="boton-enlace">Consultar Disponibilidad</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta-producto">
+                <img src="images/vendas3.jpg" alt="Vendas Dragons">
+                <div class="info-producto">
+                    <div>
+                        <h3>Vendas Dragons</h3>
+                        <p>Vendas Dragon Fit deportivas para la práctica de Boxeo, Kickboxing, MMA.<br><strong>Longitud:</strong> 5 Metros.</p>
+                    </div>
+                    <div>
+                        <div class="precio-producto">80 Bs.</div>
+                        <a href="https://wa.link/ptzvxl" target="_blank" class="boton-enlace">Consultar Disponibilidad</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta-producto">
+                <img src="images/canilleras1.jpg" alt="Canilleras Venum">
+                <div class="info-producto">
+                    <div>
+                        <h3>Canilleras Venum</h3>
+                        <p>Canilleras Venum para la práctica de Kickboxing, Muay Thai, MMA.</p>
+                    </div>
+                    <div>
+                        <div class="precio-producto">350 Bs.</div>
+                        <a href="https://wa.link/oe2bx5" target="_blank" class="boton-enlace">Consultar Disponibilidad</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta-producto">
+                <img src="images/canilleras2.jpg" alt="Canilleras Pretorian">
+                <div class="info-producto">
+                    <div>
+                        <h3>Canilleras Pretorian</h3>
+                        <p>Canilleras Pretorian para la práctica de Kickboxing, Muay Thai, MMA.</p>
+                    </div>
+                    <div>
+                        <div class="precio-producto">350 Bs.</div>
+                        <a href="https://wa.link/yykptb" target="_blank" class="boton-enlace">Consultar Disponibilidad</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta-producto">
+                <img src="images/bucal.jpg" alt="Bucal Sencillo">
+                <div class="info-producto">
+                    <div>
+                        <h3>Bucal Sencillo</h3>
+                        <p>Bucal Sencillo para la protección de la dentadura mientras se practican disciplinas como el Boxeo, Kickboxing, MMA.</p>
+                    </div>
+                    <div>
+                        <div class="precio-producto">55 Bs.</div>
+                        <a href="https://wa.link/zku66s" target="_blank" class="boton-enlace">Consultar Disponibilidad</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="subtitulo-bloque">Suplementos</h3>
+        <div class="bloque-catalogo">
+            <div class="tarjeta-producto">
+                <img src="images/suplemento1.jpg" alt="Creatina Dragon Pharma">
+                <div class="info-producto">
+                    <div>
+                        <h3>Creatina Dragon Pharma</h3>
+                        <p>Suplemento deportivo marca Dragon Pharma, para el aumento de energía y fuerza.<br><strong>Contenido:</strong> 300 Gr., 1 Kg.</p>
+                    </div>
+                    <div>
+                        <div class="precio-producto">350 - 720 Bs.</div>
+                        <a href="https://wa.link/j1eo30" target="_blank" class="boton-enlace">Consultar Disponibilidad</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta-producto">
+                <img src="images/suplemento2.jpg" alt="Creatina Nutrex">
+                <div class="info-producto">
+                    <div>
+                        <h3>Creatina Nutrex</h3>
+                        <p>Suplemento deportivo marca Nutrex, para el aumento de energía y fuerza.<br><strong>Contenido:</strong> 300 Gr., 1 Kg.</p>
+                    </div>
+                    <div>
+                        <div class="precio-producto">300 - 680 Bs.</div>
+                        <a href="https://wa.link/trtge0" target="_blank" class="boton-enlace">Consultar Disponibilidad</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta-producto">
+                <img src="images/suplemento3.jpg" alt="Proteína Ovoprotein">
+                <div class="info-producto">
+                    <div>
+                        <h3>Proteína Ovoprotein</h3>
+                        <p>Suplemento deportivo marca Ovoprotein, para el aumento de masa muscular.<br><strong>Contenido:</strong> 500 Gr., 1 Kg.</p>
+                    </div>
+                    <div>
+                        <div class="precio-producto">210 - 330 Bs.</div>
+                        <a href="https://wa.link/7mea47" target="_blank" class="boton-enlace">Consultar Disponibilidad</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta-producto">
+                <img src="images/suplemento4.jpg" alt="Yogurt Griego Olimpo">
+                <div class="info-producto">
+                    <div>
+                        <h3>Yogurt Griego Olimpo</h3>
+                        <p>Yogurt Griego Marca Olimpo, full proteína para todos los vikingos y valkirias.<br><strong>Contenido:</strong> 130 Gr., 450 Gr., 1 Kg.</p>
+                    </div>
+                    <div>
+                        <div class="precio-producto">10 - 35 - 50 Bs.</div>
+                        <a href="https://wa.link/4v5zmi" target="_blank" class="boton-enlace">Consultar Disponibilidad</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+    <section id="contacto">
+        <h2 class="titulo-seccion">Información & Contacto</h2>
+
+        <h3 class="subtitulo-bloque">Nuestros Horarios</h3>
+        <div class="bloque-horarios">
+            <div class="tarjeta-horario">
+                <div class="icono-horario">
+                    <svg viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm1 12v-6h-2v8h7v-2h-5z"/></svg>
+                </div>
+                <div class="detalles-horario">
+                    <h4>Turno Mañana</h4>
+                    <p>9:00 am - 12:00 am</p>
+                </div>
+            </div>
+
+            <div class="tarjeta-horario">
+                <div class="icono-horario">
+                    <svg viewBox="0 0 24 24"><path d="M12.3 2a10 10 0 0 0 9.7 13.6 10 10 0 1 1-9.7-13.6z"/></svg>
+                </div>
+                <div class="detalles-horario">
+                    <h4>Turno Tarde / Noche</h4>
+                    <p>3:30 pm - 9:30 pm</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="caja-info-horarios">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+            <p><strong>Nota:</strong> La academia tiene un sistema de horario libre, lo que significa que dentro de esos horarios la persona puede venir a entrenar.</p>
+        </div>
+
+        <h3 class="subtitulo-bloque">Nuestros Planes</h3>
+        <div class="bloque-planes">
+            <div class="tarjeta-plan">
+                <div>
+                    <h3>Pase Diario</h3>
+                    <p style="color: var(--color-texto-suave); font-size: 0.9rem;">Entrenamiento por un día</p>
+                    <div class="precio-plan">15 <span>Bs. / día</span></div>
+                    <ul class="caracteristicas-plan">
+                        <li>Acceso libre por la sesión completa</li>
+                        <li>Entrenamiento de técnica o sparring</li>
+                        <li>Uso de instalaciones y equipos</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="tarjeta-plan destacado">
+                <span class="etiqueta-plan">Más Popular</span>
+                <div>
+                    <h3>Plan Mensual</h3>
+                    <p style="color: var(--color-texto-suave); font-size: 0.9rem;">Entrenamiento continuo ilimitado</p>
+                    <div class="precio-plan">180 <span>Bs. / mes</span></div>
+                    <ul class="caracteristicas-plan">
+                        <li>Acceso ilimitado turno mañana y tarde</li>
+                        <li>Técnica de Striking, MMA y Grappling</li>
+                        <li>Sesiones de Sparring guiado</li>
+                        <li>Acondicionamiento físico completo</li>
+                        <li>Seguimiento de progresión del atleta</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="tarjeta-plan">
+                <div>
+                    <h3>Plan Semanal</h3>
+                    <p style="color: var(--color-texto-suave); font-size: 0.9rem;">Perfecto para probar la academia</p>
+                    <div class="precio-plan">50 <span>Bs. / semana</span></div>
+                    <ul class="caracteristicas-plan">
+                        <li>Acceso continuo durante 5 días</li>
+                        <li>Técnica y acondicionamiento físico</li>
+                        <li>Acompañamiento del entrenador</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="caja-tarjeta tarjeta-ancho-completo">
+            <h3 class="subtitulo-bloque" style="margin-top: 0;">Ubicación de la Academia</h3>
+            <p style="color: var(--color-texto-claro); font-weight: 500;">📍 Av. Meliton Villavicencio, Esq. José Bopi, diagonal a YPFB</p>
+            <div class="contenedor-mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3882.285802117581!2d-64.9080!3d-14.8333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTTCsDQ5Jz5FOC44IlMgNjTCsDU0JzI4LjgiVw!5e0!3m2!1ses!2sbo!4v1620000000000!5m2!1ses!2sbo" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+
+        <div class="caja-tarjeta tarjeta-ancho-completo">
+            <h3 class="subtitulo-bloque" style="margin-top: 0;">Nuestras Redes Sociales</h3>
+            <p style="color: var(--color-texto-suave); margin-bottom: 0.5rem;">Haz clic en los inconos para ir directamente:</p>
+            
+            <div class="botones-sociales">
+                <a href="https://wa.me/59175197336" target="_blank" class="boton-social">
+                    <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                    WhatsApp
+                </a>
+
+                <a href="https://www.instagram.com/valhalla.academytdd?stkn=MWFmbTltYTV1b2s4eA==" target="_blank" class="boton-social">
+                    <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                    Instagram
+                </a>
+
+                <a href="https://www.facebook.com/profile.php?id=100067202135965" target="_blank" class="boton-social">
+                    <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                    Facebook
+                </a>
+
+                <a href="https://www.tiktok.com/@valhallaakd_tdd?_r=1&_t=ZS-9AAfqjQF4Kb" target="_blank" class="boton-social">
+                    <svg viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.82.56-1.31 1.55-1.3 2.53-.02.82.32 1.65.92 2.22.7.67 1.73.97 2.68.78.96-.18 1.79-.88 2.17-1.78.3-.68.41-1.43.39-2.18.01-4.73.01-9.46.01-14.19z"/></svg>
+                    TikTok
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <img src="images/logo.png" alt="Logo Valhalla Academy">
+        <h2>VALHALLA ACADEMY</h2>
+        <p>© Valhalla Academy. Todos los derechos reservados.</p>
+    </footer>
+
+   
+    <script src="script.js"></script>
+</body>
+</html>
